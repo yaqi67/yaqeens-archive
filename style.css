@@ -413,3 +413,51 @@ button,
   margin-top: 0;
   margin-bottom: 24px;
 }
+/* Make Little Notes look like an open book */
+
+.book-notes {
+  overflow: visible;
+  border-radius: 8px 22px 22px 8px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  gap: 0;
+}
+
+.book-page {
+  background: #fffaf7;
+  border: 2px solid #d8c5b4;
+  min-height: 300px;
+  position: relative;
+}
+
+.left-page {
+  border-radius: 28px 8px 8px 28px;
+  border-right: 1px solid #d8c5b4;
+  box-shadow: -6px 7px 14px rgba(120, 90, 70, 0.10);
+}
+
+.right-page {
+  border-radius: 8px 28px 28px 8px;
+  border-left: 1px solid #d8c5b4;
+  box-shadow: 6px 7px 14px rgba(120, 90, 70, 0.10);
+}
+
+/* center fold */
+.book-notes::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 50%;
+  width: 8px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to right,
+    rgba(120, 90, 70, 0.08),
+    rgba(255, 250, 247, 0.7),
+    rgba(120, 90, 70, 0.08)
+  );
+  border-radius: 50%;
+  pointer-events: none;
+}
