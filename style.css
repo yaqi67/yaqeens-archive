@@ -360,3 +360,56 @@ button,
 .contact-link {
   cursor: pointer !important;
 }
+
+/* Open book - Little Notes */
+
+.book-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  background: #fffaf7;
+  border: 2px solid #d8c5b4;
+  border-radius: 28px 28px 18px 18px;
+  box-shadow: 0 8px 20px rgba(120, 90, 70, 0.12);
+  overflow: hidden;
+}
+
+.book-notes::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 50%;
+  width: 2px;
+  background: #d8c5b4;
+}
+
+.book-page {
+  padding: 28px 20px;
+  min-height: 250px;
+}
+
+.left-page {
+  text-align: center;
+  border-radius: 28px 0 0 18px;
+}
+
+.right-page {
+  text-align: center;
+  border-radius: 0 28px 18px 0;
+}
+
+.book-page h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.note-label {
+  font-weight: bold;
+  margin: 0 0 6px;
+}
+
+.book-page p {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
