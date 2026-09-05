@@ -357,3 +357,6 @@ button,
 .contact-link:hover {
   text-decoration: underline;
 }
+.contact-link {
+  cursor: pointer !important;
+}
