@@ -51,7 +51,7 @@ header p {
 
 #layout {
   display: grid;
-  grid-template-columns: 220px 1fr 240px;
+  grid-template-columns: 220px 1fr 340px;
   gap: 20px;
 }
 
