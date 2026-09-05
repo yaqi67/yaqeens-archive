@@ -317,3 +317,34 @@ button,
 .read-button {
     cursor: url("icons/cursor.png%20(2).png") 8 8, auto;
 }
+
+/* Contact page */
+.contact-card {
+  text-align: left;
+}
+
+.contact-card h3 {
+  margin-bottom: 18px;
+}
+
+.contact-card > p {
+  margin-bottom: 28px;
+}
+
+.contact-details {
+  margin: 24px 0 30px;
+}
+
+.contact-label {
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.contact-email {
+  margin: 0;
+  font-weight: 600;
+}
+
+.contact-card .button-wrap {
+  justify-content: flex-start;
+}
