@@ -427,7 +427,7 @@ button,
 .book-page {
   background: #fffaf7;
   border: 2px solid #d8c5b4;
-  min-height: 300px;
+  min-height: 230px;
   position: relative;
 }
 
@@ -460,4 +460,30 @@ button,
   );
   border-radius: 50%;
   pointer-events: none;
+}
+.book-notes {
+  margin-top: 10px;
+}
+
+.book-page {
+  padding: 24px 18px 30px;
+}
+
+.left-page {
+  transform: rotate(-0.8deg);
+}
+
+.right-page {
+  transform: rotate(0.8deg);
+}
+
+.book-notes::before {
+  content: "୨ৎ";
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #b98f9a;
+  z-index: 5;
 }
