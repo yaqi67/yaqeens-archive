@@ -492,43 +492,108 @@ aside {
 }
 /* Rotating quote card */
 
+/* Small quote card under Little Notes */
+
+.quote-card-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
 .quote-card {
-  width: 78%;
-  margin: 34px auto 0;
-  padding: 24px 26px;
+  position: relative;
+
+  width: 265px;
+  min-height: 165px;
+
+  padding: 30px 24px 24px;
+
   text-align: center;
 
   background: #fffaf7;
   border: 2px solid #d8c5b4;
-  border-radius: 20px;
+  border-radius: 18px;
 
-  box-shadow: 0 6px 16px rgba(120, 90, 70, 0.10);
+  box-shadow: 0 7px 16px rgba(120, 90, 70, 0.12);
+
+  transform: rotate(-0.5deg);
 }
 
 .quote-title {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
+
   font-weight: 700;
+  font-size: 1rem;
+
+  color: #5f463f;
 }
 
 #quote-text {
   margin: 0;
+
   font-family: Georgia, serif;
   font-style: italic;
-  line-height: 1.6;
+
+  font-size: 0.93rem;
+  line-height: 1.55;
+
+  color: #6b5148;
 }
 
 #quote-author {
   margin: 14px 0 0;
-  font-size: 0.95rem;
+
+  font-size: 0.88rem;
   font-weight: 600;
+
+  color: #6b5148;
 }
 
-.quote-fade {
-  opacity: 0;
-  transition: opacity 0.6s ease;
+/* Bow at the top */
+.quote-bow {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 30px;
+  color: #c18f9f;
 }
 
-.quote-show {
-  opacity: 1;
-  transition: opacity 0.6s ease;
+/* Small decorative bow */
+.quote-bow-bottom {
+  position: absolute;
+
+  right: 14px;
+  bottom: 8px;
+
+  font-size: 22px;
+
+  color: #c18f9f;
+  transform: rotate(-10deg);
+}
+
+/* Quote indicator dots */
+
+.quote-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+
+  margin-top: 17px;
+}
+
+.quote-dots span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #ddcfca;
+}
+
+.quote-dots span.active {
+  background: #c18f9f;
 }
