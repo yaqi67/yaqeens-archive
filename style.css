@@ -348,3 +348,12 @@ button,
 .contact-card .button-wrap {
   justify-content: flex-start;
 }
+.contact-link {
+  color: #6b5148;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
