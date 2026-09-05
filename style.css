@@ -427,7 +427,7 @@ button,
 .book-page {
   background: #fffaf7;
   border: 2px solid #d8c5b4;
-  min-height: 230px;
+ min-height: 180px;
   position: relative;
 }
 
@@ -486,4 +486,7 @@ button,
   font-size: 24px;
   color: #b98f9a;
   z-index: 5;
+}
+aside {
+  align-self: start;
 }
