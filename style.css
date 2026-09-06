@@ -597,3 +597,92 @@ aside {
 .quote-dots span.active {
   background: #c18f9f;
 }
+/* Words I Keep — small card under the book */
+
+.quote-card-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  /* distance underneath the book */
+  margin-top: 38px;
+}
+
+.quote-card {
+  position: relative;
+
+  width: 270px;
+  min-height: 150px;
+  box-sizing: border-box;
+
+  padding: 28px 24px 22px;
+
+  background: #fffaf7;
+  border: 2px solid #d8c5b4;
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 7px 16px rgba(120, 90, 70, 0.12);
+
+  /* tiny handmade-paper tilt */
+  transform: rotate(-0.4deg);
+}
+
+
+/* Words I Keep title */
+
+.quote-title {
+  margin: 0 0 14px;
+
+  color: #5f463f;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+/* Quote */
+
+#quote-text {
+  margin: 0;
+
+  color: #6b5148;
+
+  font-family: Georgia, serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+
+/* Author */
+
+#quote-author {
+  margin: 13px 0 0;
+
+  color: #6b5148;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+
+/* Bow sitting above the card */
+
+.quote-bow {
+  position: absolute;
+
+  top: -22px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  color: #c18f9f;
+  font-size: 30px;
+}
+
+/* REMOVE the old quote dots */
+
+.quote-dots {
+  display: none;
+}
