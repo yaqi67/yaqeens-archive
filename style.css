@@ -490,199 +490,134 @@ button,
 aside {
   align-self: start;
 }
-/* Rotating quote card */
+/* =========================
+   HOMEPAGE RIGHT SIDE
+   ========================= */
 
-/* Small quote card under Little Notes */
-
-.quote-card-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
+.home-aside {
+  align-self: start;
 }
 
-.quote-card {
+
+/* Quote card directly under the book */
+
+.home-aside .quote-card {
   position: relative;
 
-  width: 265px;
-  min-height: 165px;
-
-  padding: 30px 24px 24px;
-
-  text-align: center;
-
-  background: #fffaf7;
-  border: 2px solid #d8c5b4;
-  border-radius: 18px;
-
-  box-shadow: 0 7px 16px rgba(120, 90, 70, 0.12);
-
-  transform: rotate(-0.5deg);
-}
-
-.quote-title {
-  margin: 0 0 14px;
-
-  font-weight: 700;
-  font-size: 1rem;
-
-  color: #5f463f;
-}
-
-#quote-text {
-  margin: 0;
-
-  font-family: Georgia, serif;
-  font-style: italic;
-
-  font-size: 0.93rem;
-  line-height: 1.55;
-
-  color: #6b5148;
-}
-
-#quote-author {
-  margin: 14px 0 0;
-
-  font-size: 0.88rem;
-  font-weight: 600;
-
-  color: #6b5148;
-}
-
-/* Bow at the top */
-.quote-bow {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  font-size: 30px;
-  color: #c18f9f;
-}
-
-/* Small decorative bow */
-.quote-bow-bottom {
-  position: absolute;
-
-  right: 14px;
-  bottom: 8px;
-
-  font-size: 22px;
-
-  color: #c18f9f;
-  transform: rotate(-10deg);
-}
-
-/* Quote indicator dots */
-
-.quote-dots {
-  display: flex;
-  justify-content: center;
-  gap: 7px;
-
-  margin-top: 17px;
-}
-
-.quote-dots span {
-  width: 6px;
-  height: 6px;
-
-  border-radius: 50%;
-
-  background: #ddcfca;
-}
-
-.quote-dots span.active {
-  background: #c18f9f;
-}
-/* Words I Keep — small card under the book */
-
-.quote-card-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  /* distance underneath the book */
-  margin-top: 38px;
-}
-
-.quote-card {
-  position: relative;
-
-  width: 270px;
-  min-height: 150px;
+  width: 92%;
+  min-height: 185px;
   box-sizing: border-box;
 
-  padding: 28px 24px 22px;
+  margin: 38px auto 0;
+  padding: 36px 28px 28px;
 
   background: #fffaf7;
   border: 2px solid #d8c5b4;
-  border-radius: 18px;
+  border-radius: 20px;
 
   text-align: center;
 
-  box-shadow: 0 7px 16px rgba(120, 90, 70, 0.12);
-
-  /* tiny handmade-paper tilt */
-  transform: rotate(-0.4deg);
+  box-shadow: 0 7px 18px rgba(120, 90, 70, 0.11);
 }
 
 
-/* Words I Keep title */
+/* Little pink tape */
+
+.quote-tape {
+  position: absolute;
+
+  width: 82px;
+  height: 24px;
+
+  top: -13px;
+  left: 50%;
+
+  transform: translateX(-50%) rotate(1deg);
+
+  background: rgba(225, 177, 190, 0.65);
+  border-radius: 2px;
+}
+
+
+/* Title */
 
 .quote-title {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
 
   color: #5f463f;
-  font-size: 1rem;
-  font-weight: 700;
+
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: bold;
 }
 
 
 /* Quote */
 
 #quote-text {
-  margin: 0;
+  margin: 0 auto;
 
   color: #6b5148;
 
   font-family: Georgia, serif;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 
 /* Author */
 
 #quote-author {
-  margin: 13px 0 0;
+  margin: 17px 0 0;
 
   color: #6b5148;
 
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 
-/* Bow sitting above the card */
+/* Remove anything left from old quote design */
 
+.quote-bow-bottom,
+.quote-dots,
 .quote-bow {
-  position: absolute;
+  display: none;
+}
+/* Made by Yaqeen footer */
 
-  top: -22px;
-  left: 50%;
+.made-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 
-  transform: translateX(-50%);
+  width: 100%;
+  box-sizing: border-box;
 
-  color: #c18f9f;
-  font-size: 30px;
+  margin-top: 55px;
+  padding: 15px 0;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-/* REMOVE the old quote dots */
+.made-by p {
+  margin: 0;
 
-.quote-dots {
-  display: none;
+  color: #8f6570;
+
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+
+  white-space: nowrap;
+}
+
+.made-by span {
+  height: 1px;
+  flex: 1;
+
+  background: #d7a5b1;
 }
