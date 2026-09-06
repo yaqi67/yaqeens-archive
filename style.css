@@ -621,3 +621,179 @@ aside {
 
   background: #d7a5b1;
 }
+/* ========================================
+   HOMEPAGE FINAL RIGHT COLUMN
+   ======================================== */
+
+#layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 340px;
+  gap: 20px;
+  align-items: start;
+}
+
+
+/* Remove the giant default aside card */
+.home-aside {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  align-self: start;
+
+  gap: 34px;
+}
+
+
+/* ========================================
+   QUOTE CARD
+   ======================================== */
+
+.home-aside .quote-card {
+  position: relative;
+
+  width: 100%;
+  min-height: 190px;
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 38px 30px 30px;
+
+  background: #fffaf7;
+
+  border: 2px solid #d8c5b4;
+  border-radius: 22px;
+
+  text-align: center;
+
+  box-shadow: 0 7px 18px rgba(120, 90, 70, 0.11);
+
+  transform: none;
+}
+
+
+/* Pink tape */
+
+.quote-tape {
+  position: absolute;
+
+  top: -14px;
+  left: 50%;
+
+  width: 82px;
+  height: 25px;
+
+  transform: translateX(-50%) rotate(1deg);
+
+  background: rgba(225, 177, 190, 0.65);
+
+  border-radius: 2px;
+}
+
+
+/* Quote heading */
+
+.quote-title {
+  margin: 0 0 20px;
+
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+
+  color: #5f463f;
+}
+
+
+/* Quote */
+
+#quote-text {
+  margin: 0 auto;
+
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  font-style: italic;
+
+  line-height: 1.6;
+
+  color: #6b5148;
+}
+
+
+/* Author */
+
+#quote-author {
+  margin: 18px 0 0;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  color: #6b5148;
+}
+
+
+/* Kill old decorations */
+.quote-card-wrap,
+.quote-bow,
+.quote-bow-bottom,
+.quote-dots {
+  display: none !important;
+}
+
+
+/* ========================================
+   MADE BY YAQEEN — LAST THING ON PAGE
+   ======================================== */
+
+.made-by {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  box-sizing: border-box;
+
+  margin-top: 50px;
+  padding: 16px 0;
+
+  background: transparent !important;
+
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+.made-by p {
+  margin: 0;
+
+  white-space: nowrap;
+
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+
+  color: #9f6d7b;
+}
+
+
+.made-by span {
+  flex: 1;
+  height: 1px;
+
+  background: #d7a5b1;
+}
+.home-aside {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
